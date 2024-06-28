@@ -1,0 +1,1 @@
+export const asideImages = document.getElementById('asideImages')

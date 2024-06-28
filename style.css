@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-size: clamp(40%, 1% 2vw, 62.5%);
+    
+}
+
+body {
+    background-color: #FFFFFF;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #323238;
+}
+
+.flex {
+    display: flex;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#time {
+    font-size: 12.6rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-right: 10rem;
+}
+
+
+#controls {    
+    margin-top: 1rem;
+    padding: 2.2rem 4rem;
+    gap: 1.6rem;
+    margin-right: 8rem;
+
+}
+
+button {
+    background: transparent;
+    border: none;
+    color: #323238;
+    font-weight: bold;
+    
+    cursor: pointer;
+
+    margin-right: 2rem;
+
+    font-size: 4.8rem;
+}
+
+button:hover {
+    color: #210df7; 
+}
+
+
+
+/* Aside */
+
+aside {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    justify-items: center;
+    gap: 3rem;
+    margin-left: 4rem;
+}
+
+.tree, .rain, .house, .fire {
+    width: 13.8rem;
+    height: 15.2rem;
+    height: auto;
+    cursor: pointer;
+}
+
+
+.image-container {
+    width: 13.8rem; 
+    height: 15rem; 
+    padding: .5rem;
+    background-color: #E1E1E6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 2.4rem;
+
+}
+
+.image-container img {
+    width: 4.76rem;
+    height: 5.6rem;
+
+    transition: transform 0.4s ease; 
+}
+
+
+#asideImages :hover {
+    background-color: #02799D;
+}
+
+.image-container:hover img {
+    transform: translateY(-0.3rem); 
+}
+
+
+#hidden {
+    display: none;
+}
+
+#active {
+    display: none;
+}
+
+#hidden_section {
+    display: none;
+    position: absolute;
+    margin-right: 8rem;
+    gap: 1.8rem;
+    margin-top: 15.7rem;
+}
+
+#hidden_section img {
+    height: 4.6rem;
+    width: 4.6rem;
+}
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temporizador estilo pomodoro">
+    
+    <title>FocusTimer 2.0</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="caminho/para/seu/icone.ico" type="image/x-icon">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script src="/src/main.js" type="module" defer></script>
+</head>
+<body>
+        <div id="app">
+            
+            <section id="time" class="flex">
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </section>
+            
+            <section id="controls" class="flex">
+                
+                <button>
+                <i class="ph-light ph-play-circle"
+                id="play"
+                data-action="toggleRunning"></i>
+                </button>
+                
+                <button>
+                <i class="ph-light ph-stop-circle"
+                id="stop"
+                data-action="reset"></i>
+                </button>
+                
+                <button>
+                <i class="ph-light ph-plus-circle"
+                id="plus"
+                data-action="plus"></i>
+                </button>
+
+                <button>
+                <i class="ph-light ph-minus-circle"
+                id="moins"
+                data-action="moins"></i>
+                </button>
+
+            </section>
+
+            <section id="hidden_section" class="flex">
+
+        </div>
+<aside id='asideImages'>
+    <div class="image-container">
+        <img src="assets/Tree.png" data-action="tree" alt="" class="tree">
+    </div>
+    <div class="image-container">
+        <img src="assets/Rain.png" data-action="rain" alt="" class="rain">
+    </div>
+    <div class="image-container">
+        <img src="assets/House.png" data-action="house" alt="" class="house">
+    </div>
+    <div class="image-container">
+        <img src="assets/Fire.png" data-action="fire" alt="" class="fire">
+    </div>
+
+</aside>
+  
+</body>
+</html>
+
+
+
+</body>
+</html>
